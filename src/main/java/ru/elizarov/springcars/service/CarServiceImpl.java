@@ -35,7 +35,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<Car> findByBrand(String brand) {
-        return null;
+        return carRepository.findByBrand(brand);
     }
 
     @Override
